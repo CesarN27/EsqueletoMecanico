@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Materiales del exoasistente de rodilla</title>
+<style>
+@page{size:Letter;margin:16mm 14mm}
+body{font-family:"Segoe UI",Arial,sans-serif;font-size:10.5pt;color:#2C2C2A;line-height:1.35}
+h1{font-size:20pt;margin:0 0 2pt}
+h2{font-size:13pt;margin:16pt 0 5pt;color:#0F6E56;border-bottom:1.5px solid #9FE1CB;padding-bottom:2pt;break-after:avoid}
+p.sub{margin:0 0 8pt;color:#5F5E5A}
+table{width:100%;border-collapse:collapse;margin-bottom:4pt;break-inside:auto}
+tr{break-inside:avoid}
+th{background:#E1F5EE;color:#085041;text-align:left;font-size:9.5pt;padding:4pt 6pt;border:1px solid #9FE1CB}
+td{padding:4pt 6pt;border:1px solid #D3D1C7;vertical-align:top;font-size:9.5pt}
+td.c{text-align:center;white-space:nowrap}
+tr.have td{background:#FFF4B8}
+tr.have td.n{font-weight:600;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:2px}
+.tag{display:inline-block;padding:1pt 6pt;border-radius:8pt;font-size:8.5pt;font-weight:600}
+.si{background:#F2C94C;color:#4A3A00}
+.no{background:#F1EFE8;color:#5F5E5A}
+.legend{background:#FFF4B8;border:1px solid #F2C94C;padding:6pt 8pt;border-radius:4pt;margin:8pt 0}
+.note{font-size:9pt;color:#5F5E5A;margin:6pt 0}
+img{width:100%;border:1px solid #D3D1C7;border-radius:4pt;margin:6pt 0}
+.pb{break-before:page}
+</style></head><body>
+
+<h1>Exoasistente de rodilla: materiales y componentes</h1>
+<p class="sub">Prototipo de banco con ESP32 · motor reductor con TB6612FNG · 2 IMU · encoder</p>
+
+<div class="legend"><b><u>Subrayado y resaltado en amarillo</u></b> = material que ya tienes. El resto es lo que falta por conseguir.</div>
+
+<h2>1. Electrónica y control</h2>
+<table>
+<tr><th>Cant.</th><th>Material</th><th>Especificación</th><th>Para qué sirve</th><th>Estado</th></tr>
+<tr class="have"><td class="c">1</td><td class="n">ESP32 DevKit</td><td>30 pines, 3.3 V</td><td>Cerebro del sistema</td><td class="c"><span class="tag si">Ya lo tengo</span></td></tr>
+<tr class="have"><td class="c">1</td><td class="n">Driver TB6612FNG</td><td>1.2 A continuos por canal</td><td>Controla el motor reductor</td><td class="c"><span class="tag si">Ya lo tengo</span></td></tr>
+<tr class="have"><td class="c">1–2</td><td class="n">Motor reductor TT con disco de encoder</td><td>3–6 V</td><td>Mueve la rodilla en el prototipo</td><td class="c"><span class="tag si">Ya lo tengo</span></td></tr>
+<tr><td class="c">2</td><td>IMU MPU6050 (módulo GY-521)</td><td>I2C, 3.3 V; uno en 0x68 y otro en 0x69</td><td>Torso y muslo: detectan que la persona se levanta</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1–2</td><td>Sensor óptico de ranura (LM393 / FC-03)</td><td>Salida digital, 3.3–5 V</td><td>Lee el disco del encoder</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Protoboard o PCB perforada</td><td>830 puntos o similar</td><td>Conexiones del prototipo</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr class="have"><td class="c">2</td><td class="n">Servomotor SG90 (opcional)</td><td>5 V, 180°</td><td>Pruebas iniciales de movimiento</td><td class="c"><span class="tag si">Ya lo tengo</span></td></tr>
+</table>
+
+<h2>2. Alimentación y seguridad</h2>
+<table>
+<tr><th>Cant.</th><th>Material</th><th>Especificación</th><th>Para qué sirve</th><th>Estado</th></tr>
+<tr><td class="c">2</td><td>Celdas 18650 con portabaterías 2S</td><td>3.7 V, 2000 mAh o más</td><td>Fuente de 7.4 V</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Módulo BMS 2S</td><td>Protección contra sobredescarga y cortocircuito</td><td>Cuida las celdas</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Cargador 2S con balanceo</td><td>Tipo IMAX B6 o similar</td><td>Cargar las baterías</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Buck LM2596 o similar</td><td>Entrada 7.4 V, salida 5 V, 3 A</td><td>Alimenta la ESP32 por VIN</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Buck LM2596 o similar</td><td>Salida 6 V, ajustada con multímetro</td><td>Alimenta VM del driver</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Botón de paro de emergencia tipo hongo</td><td>Normalmente cerrado, 22 mm, 10 A</td><td>Corta toda la energía</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Portafusible con fusible</td><td>2–3 A</td><td>Protege contra cortocircuitos</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Capacitor electrolítico</td><td>470–1000 µF, 10 V</td><td>Estabiliza la alimentación del motor</td><td class="c"><span class="tag no">Falta</span></td></tr>
+</table>
+
+<h2>3. Cableado</h2>
+<table>
+<tr><th>Cant.</th><th>Material</th><th>Especificación</th><th>Estado</th></tr>
+<tr class="have"><td class="c">1 juego</td><td class="n">Cables dupont</td><td>Macho-hembra y hembra-hembra</td><td class="c"><span class="tag si">Ya lo tengo</span></td></tr>
+<tr><td class="c">2 m</td><td>Cable de silicón 22 AWG</td><td>Rojo y negro, para potencia</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Regleta de tornillos o conectores XT30</td><td>Conexión de batería y motor</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Termofit</td><td>Para aislar soldaduras</td><td class="c"><span class="tag no">Falta</span></td></tr>
+</table>
+
+<h2>4. Mecánica y sujeción</h2>
+<table>
+<tr><th>Cant.</th><th>Material</th><th>Para qué sirve</th><th>Estado</th></tr>
+<tr><td class="c">1</td><td>Rodillera ajustable con bisagras laterales</td><td>Base del dispositivo en la rodilla</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">2–3</td><td>Bandas de velcro de 25–50 mm</td><td>Sujetar al muslo y a la pierna</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Cinturón o faja</td><td>Soporte de la caja de electrónica</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Caja de proyecto (ABS)</td><td>Aloja ESP32, driver, bucks y batería</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1</td><td>Piezas impresas en 3D (PETG o PLA)</td><td>Soportes del motor, IMU y barras</td><td class="c"><span class="tag no">Falta</span></td></tr>
+<tr><td class="c">1 juego</td><td>Tornillos M3 con tuercas</td><td>Montaje</td><td class="c"><span class="tag no">Falta</span></td></tr>
+</table>
+
+<h2>5. Herramientas</h2>
+<table>
+<tr><th>Material</th><th>Estado</th></tr>
+<tr><td>Multímetro</td><td class="c"><span class="tag no">Por confirmar</span></td></tr>
+<tr><td>Soldador y estaño</td><td class="c"><span class="tag no">Por confirmar</span></td></tr>
+<tr class="have"><td class="n">Cable USB para programar la ESP32</td><td class="c"><span class="tag si">Ya lo tengo</span></td></tr>
+</table>
+
+<h2>6. Para la versión real del exoesqueleto (etapa posterior)</h2>
+<table>
+<tr><th>Componente</th><th>Motivo</th></tr>
+<tr><td>Motor BLDC de reducción baja (por ejemplo cuasi directo 9:1)</td><td>Da el torque necesario y se mueve fácil con la energía apagada</td></tr>
+<tr><td>Driver del motor con límite de corriente por hardware</td><td>Evita que una falla del programa empuje con toda la fuerza</td></tr>
+<tr><td>Encoder magnético (por ejemplo AS5600)</td><td>Ángulo de la rodilla con buena precisión</td></tr>
+<tr><td>Watchdog externo y relé o MOSFET de corte</td><td>Corta la energía del motor en 50 a 100 ms si el programa se cuelga</td></tr>
+</table>
+<p class="note">El TB6612FNG del prototipo no permite fijar un límite de corriente por hardware, y el motor TT no entrega el torque del diseño. El prototipo sirve para probar la lógica y la detección, no para ayudar a una persona.</p>
+
+<div class="pb"></div>
+<h2>Diagrama de conexiones</h2>
+<img src="conexiones.png">
+<p class="note">Cambio de pin respecto al código actual: BIN2 pasa del GPIO 21 al GPIO 23, porque el GPIO 21 es SDA del bus I2C de los IMU.</p>
+
+<div class="pb"></div>
+<h2>Diseño físico</h2>
+<img src="diseno_fisico.png">
+</body></html>

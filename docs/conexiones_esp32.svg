@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="1500" viewBox="0 0 920 750">
+<style>text{font-family:"Segoe UI",Arial,sans-serif}.w{fill:#fff}.pl{font-size:9px;fill:#cfd8dc}.pu{font-size:9px;font-weight:700;fill:#FFD54F}.cap{font-size:11px;fill:#2C2C2A}.cap2{font-size:10px;fill:#5F5E5A}.wire{fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}</style>
+<rect width="920" height="750" fill="#FFFFFF"/>
+<text x="460" y="26" text-anchor="middle" font-size="16" font-weight="700" fill="#2C2C2A">Conexiones del prototipo (vista conceptual)</text>
+<path class="wire" d="M400 249 H290" stroke="#2E9E4F"/>
+<path class="wire" d="M400 271 H290" stroke="#2F6FDB"/>
+<path class="wire" d="M400 293 H290" stroke="#8E44AD"/>
+<path class="wire" d="M400 315 H290" stroke="#D4A017"/>
+<path class="wire" d="M400 161 H125" stroke="#E91E63"/>
+<path class="wire" d="M210 293 H130" stroke="#C0392B"/>
+<path class="wire" d="M210 315 H130" stroke="#222222"/>
+<path class="wire" d="M540 117 H620 V286 H760" stroke="#16A085"/>
+<path class="wire" d="M620 146 H760" stroke="#16A085"/>
+<path class="wire" d="M540 183 H580 V164" stroke="#2980B9"/>
+<path class="wire" d="M580 183 V304 H760" stroke="#2980B9"/>
+<path class="wire" d="M580 164 H614 A6 6 0 0 1 626 164 H760" stroke="#2980B9"/>
+<path class="wire" d="M130 640 H150" stroke="#C0392B"/>
+<path class="wire" d="M186 640 H214" stroke="#C0392B"/>
+<path class="wire" d="M266 640 H325 V590" stroke="#C0392B"/>
+<path class="wire" d="M230 590 H420" stroke="#C0392B"/>
+<path class="wire" d="M230 590 V560" stroke="#C0392B"/>
+<path class="wire" d="M420 590 V560" stroke="#C0392B"/>
+<path class="wire" d="M230 500 V430" stroke="#C0392B"/>
+<path class="wire" d="M420 500 V480 H360 V403 H400" stroke="#C0392B"/>
+<circle cx="620" cy="146" r="3.5" fill="#333"/>
+<circle cx="580" cy="183" r="3.5" fill="#333"/>
+<circle cx="230" cy="590" r="3.5" fill="#333"/>
+<circle cx="420" cy="590" r="3.5" fill="#333"/>
+<rect x="400" y="60" width="140" height="380" rx="6" fill="#1E1E1E" stroke="#000"/>
+<polyline points="440,86 450,66 460,86 470,66 480,86 490,66 500,86" fill="none" stroke="#B08D2E" stroke-width="2"/>
+<rect x="440" y="100" width="60" height="70" rx="2" fill="#C7CCD1" stroke="#8A9096"/>
+<text x="470" y="132" text-anchor="middle" font-size="7" fill="#444">ESP-WROOM</text><text x="470" y="142" text-anchor="middle" font-size="7" fill="#444">-32</text>
+<text x="470" y="290" text-anchor="middle" font-size="14" font-weight="700" class="w">ESP32</text><text x="470" y="306" text-anchor="middle" font-size="11" class="w">DevKit</text>
+<circle cx="425" cy="424" r="6" fill="#888"/><text x="425" y="414" text-anchor="middle" font-size="7" fill="#aaa">EN</text>
+<circle cx="515" cy="424" r="6" fill="#888"/><text x="515" y="414" text-anchor="middle" font-size="7" fill="#aaa">BOOT</text>
+<rect x="450" y="440" width="40" height="16" rx="2" fill="#B0B6BC" stroke="#6B7177"/>
+<text x="470" y="470" text-anchor="middle" font-size="9" fill="#5F5E5A">USB</text>
+<circle cx="400" cy="95" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="98" class="pl">EN</text>
+<circle cx="400" cy="117" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="120" class="pl">VP</text>
+<circle cx="400" cy="139" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="142" class="pl">VN</text>
+<circle cx="400" cy="161" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="164" class="pu">D34</text>
+<circle cx="400" cy="183" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="186" class="pl">D35</text>
+<circle cx="400" cy="205" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="208" class="pl">D32</text>
+<circle cx="400" cy="227" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="230" class="pl">D33</text>
+<circle cx="400" cy="249" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="252" class="pu">D25</text>
+<circle cx="400" cy="271" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="274" class="pu">D26</text>
+<circle cx="400" cy="293" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="296" class="pu">D27</text>
+<circle cx="400" cy="315" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="318" class="pu">D14</text>
+<circle cx="400" cy="337" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="340" class="pl">D12</text>
+<circle cx="400" cy="359" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="362" class="pl">D13</text>
+<circle cx="400" cy="381" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="384" class="pu">GND</text>
+<circle cx="400" cy="403" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="409" y="406" class="pu">VIN</text>
+<circle cx="540" cy="95" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="98" text-anchor="end" class="pl">D23</text>
+<circle cx="540" cy="117" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="120" text-anchor="end" class="pu">D22</text>
+<circle cx="540" cy="139" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="142" text-anchor="end" class="pl">TX0</text>
+<circle cx="540" cy="161" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="164" text-anchor="end" class="pl">RX0</text>
+<circle cx="540" cy="183" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="186" text-anchor="end" class="pu">D21</text>
+<circle cx="540" cy="205" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="208" text-anchor="end" class="pl">D19</text>
+<circle cx="540" cy="227" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="230" text-anchor="end" class="pl">D18</text>
+<circle cx="540" cy="249" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="252" text-anchor="end" class="pl">D5</text>
+<circle cx="540" cy="271" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="274" text-anchor="end" class="pl">TX2</text>
+<circle cx="540" cy="293" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="296" text-anchor="end" class="pl">RX2</text>
+<circle cx="540" cy="315" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="318" text-anchor="end" class="pl">D4</text>
+<circle cx="540" cy="337" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="340" text-anchor="end" class="pl">D2</text>
+<circle cx="540" cy="359" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="362" text-anchor="end" class="pl">D15</text>
+<circle cx="540" cy="381" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="384" text-anchor="end" class="pu">GND</text>
+<circle cx="540" cy="403" r="4.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="531" y="406" text-anchor="end" class="pu">3V3</text>
+<rect x="210" y="225" width="80" height="205" rx="4" fill="#C62828" stroke="#7f1313"/>
+<text x="250" y="392" text-anchor="middle" font-size="10" font-weight="700" class="w">TB6612</text><text x="250" y="405" text-anchor="middle" font-size="10" font-weight="700" class="w">FNG</text>
+<circle cx="290" cy="249" r="4" fill="#D4AF37" stroke="#7a6320"/>
+<text x="284" y="252" text-anchor="end" font-size="9" class="w">PWMA</text>
+<circle cx="290" cy="271" r="4" fill="#D4AF37" stroke="#7a6320"/>
+<text x="284" y="274" text-anchor="end" font-size="9" class="w">AIN1</text>
+<circle cx="290" cy="293" r="4" fill="#D4AF37" stroke="#7a6320"/>
+<text x="284" y="296" text-anchor="end" font-size="9" class="w">AIN2</text>
+<circle cx="290" cy="315" r="4" fill="#D4AF37" stroke="#7a6320"/>
+<text x="284" y="318" text-anchor="end" font-size="9" class="w">STBY</text>
+<circle cx="290" cy="337" r="4" fill="#D4AF37" stroke="#7a6320"/>
+<text x="284" y="340" text-anchor="end" font-size="9" class="w">VCC</text>
+<circle cx="290" cy="359" r="4" fill="#D4AF37" stroke="#7a6320"/>
+<text x="284" y="362" text-anchor="end" font-size="9" class="w">GND</text>
+<circle cx="210" cy="293" r="4" fill="#D4AF37" stroke="#7a6320"/>
+<text x="216" y="296" font-size="9" class="w">AO1</text>
+<circle cx="210" cy="315" r="4" fill="#D4AF37" stroke="#7a6320"/>
+<text x="216" y="318" font-size="9" class="w">AO2</text>
+<circle cx="230" cy="430" r="4" fill="#D4AF37" stroke="#7a6320"/><text x="230" y="422" text-anchor="middle" font-size="9" class="w">VM</text>
+<circle cx="85" cy="235" r="26" fill="#1b1b1b"/><circle cx="85" cy="235" r="19" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="3 5"/>
+<line x1="85" y1="261" x2="85" y2="270" stroke="#777" stroke-width="3"/>
+<rect x="40" y="270" width="90" height="80" rx="6" fill="#F2C94C" stroke="#B8860B"/>
+<rect x="128" y="287" width="6" height="12" fill="#B0B6BC"/><rect x="128" y="309" width="6" height="12" fill="#B0B6BC"/>
+<text x="85" y="308" text-anchor="middle" font-size="11" font-weight="700" fill="#5a4300">Motor TT</text><text x="85" y="323" text-anchor="middle" font-size="10" fill="#5a4300">reductor</text>
+<rect x="45" y="145" width="80" height="60" rx="4" fill="#1B5E3A" stroke="#0b3320"/>
+<text x="75" y="170" text-anchor="middle" font-size="9" font-weight="700" class="w">Sensor</text><text x="75" y="182" text-anchor="middle" font-size="9" font-weight="700" class="w">encoder</text>
+<circle cx="125" cy="161" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="119" y="164" text-anchor="end" font-size="8" class="w">OUT</text>
+<circle cx="125" cy="177" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="119" y="180" text-anchor="end" font-size="8" class="w">VCC</text>
+<circle cx="125" cy="191" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="119" y="194" text-anchor="end" font-size="8" class="w">GND</text>
+<rect x="760" y="95" width="110" height="100" rx="4" fill="#1F5FB5" stroke="#0e3a73"/>
+<text x="835" y="137" text-anchor="middle" font-size="11" font-weight="700" class="w">IMU torso</text>
+<text x="835" y="151" text-anchor="middle" font-size="9" class="w">MPU6050</text>
+<text x="835" y="164" text-anchor="middle" font-size="9" class="w">0x68</text>
+<circle cx="760" cy="110" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="766" y="113" font-size="8" class="w">VCC</text>
+<circle cx="760" cy="128" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="766" y="131" font-size="8" class="w">GND</text>
+<circle cx="760" cy="146" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="766" y="149" font-size="8" class="w">SCL</text>
+<circle cx="760" cy="164" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="766" y="167" font-size="8" class="w">SDA</text>
+<rect x="760" y="235" width="110" height="100" rx="4" fill="#1F5FB5" stroke="#0e3a73"/>
+<text x="835" y="277" text-anchor="middle" font-size="11" font-weight="700" class="w">IMU muslo</text>
+<text x="835" y="291" text-anchor="middle" font-size="9" class="w">MPU6050</text>
+<text x="835" y="304" text-anchor="middle" font-size="9" class="w">0x69</text>
+<circle cx="760" cy="250" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="766" y="253" font-size="8" class="w">VCC</text>
+<circle cx="760" cy="268" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="766" y="271" font-size="8" class="w">GND</text>
+<circle cx="760" cy="286" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="766" y="289" font-size="8" class="w">SCL</text>
+<circle cx="760" cy="304" r="3.5" fill="#D4AF37" stroke="#7a6320"/>
+<text x="766" y="307" font-size="8" class="w">SDA</text>
+<line x1="540" y1="403" x2="556" y2="403" stroke="#C0392B" stroke-width="2"/>
+<rect x="556" y="396" width="36" height="14" rx="3" fill="#C0392B"/>
+<text x="574" y="406" text-anchor="middle" font-size="9" font-weight="700" class="w">3V3</text>
+<line x1="540" y1="381" x2="556" y2="381" stroke="#222222" stroke-width="2"/>
+<rect x="556" y="374" width="36" height="14" rx="3" fill="#222222"/>
+<text x="574" y="384" text-anchor="middle" font-size="9" font-weight="700" class="w">GND</text>
+<line x1="400" y1="381" x2="384" y2="381" stroke="#222222" stroke-width="2"/>
+<rect x="348" y="374" width="36" height="14" rx="3" fill="#222222"/>
+<text x="366" y="384" text-anchor="middle" font-size="9" font-weight="700" class="w">GND</text>
+<line x1="290" y1="337" x2="298" y2="337" stroke="#C0392B" stroke-width="2"/>
+<rect x="298" y="330" width="36" height="14" rx="3" fill="#C0392B"/>
+<text x="316" y="340" text-anchor="middle" font-size="9" font-weight="700" class="w">3V3</text>
+<line x1="290" y1="359" x2="298" y2="359" stroke="#222222" stroke-width="2"/>
+<rect x="298" y="352" width="36" height="14" rx="3" fill="#222222"/>
+<text x="316" y="362" text-anchor="middle" font-size="9" font-weight="700" class="w">GND</text>
+<line x1="125" y1="177" x2="134" y2="177" stroke="#C0392B" stroke-width="2"/>
+<rect x="134" y="170" width="36" height="14" rx="3" fill="#C0392B"/>
+<text x="152" y="180" text-anchor="middle" font-size="9" font-weight="700" class="w">3V3</text>
+<line x1="125" y1="191" x2="134" y2="191" stroke="#222222" stroke-width="2"/>
+<rect x="134" y="184" width="36" height="14" rx="3" fill="#222222"/>
+<text x="152" y="194" text-anchor="middle" font-size="9" font-weight="700" class="w">GND</text>
+<line x1="760" y1="110" x2="744" y2="110" stroke="#C0392B" stroke-width="2"/>
+<rect x="708" y="103" width="36" height="14" rx="3" fill="#C0392B"/>
+<text x="726" y="113" text-anchor="middle" font-size="9" font-weight="700" class="w">3V3</text>
+<line x1="760" y1="128" x2="744" y2="128" stroke="#222222" stroke-width="2"/>
+<rect x="708" y="121" width="36" height="14" rx="3" fill="#222222"/>
+<text x="726" y="131" text-anchor="middle" font-size="9" font-weight="700" class="w">GND</text>
+<line x1="760" y1="250" x2="744" y2="250" stroke="#C0392B" stroke-width="2"/>
+<rect x="708" y="243" width="36" height="14" rx="3" fill="#C0392B"/>
+<text x="726" y="253" text-anchor="middle" font-size="9" font-weight="700" class="w">3V3</text>
+<line x1="760" y1="268" x2="744" y2="268" stroke="#222222" stroke-width="2"/>
+<rect x="708" y="261" width="36" height="14" rx="3" fill="#222222"/>
+<text x="726" y="271" text-anchor="middle" font-size="9" font-weight="700" class="w">GND</text>
+<rect x="190" y="500" width="80" height="60" rx="4" fill="#1E88E5" stroke="#0d4f8f"/><circle cx="250" cy="520" r="7" fill="#C7CCD1" stroke="#777"/>
+<text x="225" y="536" text-anchor="middle" font-size="10" font-weight="700" class="w">Buck 6 V</text><text x="225" y="549" text-anchor="middle" font-size="8" class="w">salida a VM</text>
+<rect x="380" y="500" width="80" height="60" rx="4" fill="#1E88E5" stroke="#0d4f8f"/><circle cx="440" cy="520" r="7" fill="#C7CCD1" stroke="#777"/>
+<text x="415" y="536" text-anchor="middle" font-size="10" font-weight="700" class="w">Buck 5 V</text><text x="415" y="549" text-anchor="middle" font-size="8" class="w">salida a VIN</text>
+<rect x="20" y="610" width="110" height="60" rx="6" fill="#333" stroke="#111"/>
+<rect x="28" y="617" width="94" height="18" rx="9" fill="#B8BDC2"/><rect x="28" y="645" width="94" height="18" rx="9" fill="#B8BDC2"/>
+<text x="75" y="630" text-anchor="middle" font-size="9" fill="#333">18650</text><text x="75" y="658" text-anchor="middle" font-size="9" fill="#333">18650</text>
+<rect x="150" y="632" width="36" height="16" rx="4" fill="#ECEFF1" stroke="#90A4AE"/><line x1="156" y1="640" x2="180" y2="640" stroke="#555" stroke-width="1"/>
+<rect x="214" y="618" width="52" height="44" rx="4" fill="#444"/><circle cx="240" cy="640" r="17" fill="#E53935" stroke="#8e1b19" stroke-width="2"/>
+<text x="75" y="690" text-anchor="middle" class="cap">Batería 2S (7.4 V)</text>
+<text x="168" y="670" text-anchor="middle" class="cap2">Fusible</text>
+<text x="240" y="690" text-anchor="middle" class="cap">Paro de emergencia</text>
+<text x="30" y="718" class="cap2">Etiquetas del mismo nombre (3V3, GND) van al mismo punto. GND común en todo el circuito.</text>
+<text x="30" y="735" class="cap2">Motor B: PWMB 33, BIN1 32, BIN2 23 y encoder 35 se conectan igual que el canal A (diagrama del motor A).</text>
+</svg>
